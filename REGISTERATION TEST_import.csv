@@ -1,0 +1,94 @@
+﻿TC ID,Module,Test Scenario,Test Case Description,Test Steps,Test Data,Expected Result,Actual Result,Status (Pass/Fail)
+REGISTERATION _TC01,Registration,Verify registration with valid details,"Register using valid name, email, mobile number and password","1. Open browser
+2. Go to Goibibo registration page
+3. Enter valid name
+4. Enter valid email
+5. Enter valid mobile number
+6. Enter strong password
+7. Check 'I agree to terms'
+8. Click on Register button
+9. Wait for processing
+10. Verify redirection to dashboard","Name: saydfauzaan
+Email: saydfauzankane2365@gmil.com
+Mobile: 71262849
+Password: Test@123",User account is created and redirected to dashboard,,
+REGISTERATION _TC02,Registration,Verify error message for existing email,Try registering with an already registered email,"1. Open browser
+2. Go to registration page
+3. Enter valid name
+4. Enter already used email
+5. Enter valid mobile
+6. Enter valid password
+7. Check T&C
+8. Click Register
+9. Wait for response
+10. Verify error message for duplicate email",Email: fauzan@test.com,Error message: 'Email already registered',,
+REGISTERATION _TC03,Registration,Verify error on invalid email format,Enter an email without proper format,"1. Open browser
+2. Navigate to registration page
+3. Enter valid name
+4. Enter invalid email (e.g., john.com)
+5. Enter valid mobile
+6. Enter password
+7. Check T&C
+8. Click Register
+9. Wait for validation
+10. Check for invalid email error",Email: 123fauzan.com,Error: 'Enter a valid email address',,
+REGISTERATION _TC04,Registration,Verify error when name field is blank,Leave name field empty and try to register,"1. Open registration page
+2. Leave name blank
+3. Enter valid email
+4. Enter mobile
+5. Enter password
+6. Check T&C
+7. Click Register
+8. Wait for validation
+9. Observe the error
+10. Verify name required message",-,Error: 'Name is required',,
+REGISTERATION _TC05,Registration,Verify error when password is blank,Leave password field empty,"1. Open browser
+2. Go to registration page
+3. Enter name
+4. Enter email
+5. Enter mobile number
+6. Leave password blank
+7. Check T&C
+8. Click Register
+9. Wait
+10. Check for error message",-,Error: 'Password is required',,
+REGISTERATION _TC06,Registration,Verify weak password warning,Enter a short or weak password,"1. Open registration form
+2. Enter name
+3. Enter email
+4. Enter mobile
+5. Enter weak password
+6. Observe strength meter
+7. Check T&C
+8. Submit form
+9. Wait
+10. See weak password warning",Password: 12345,Warning: 'Password is too weak',,
+REGISTERATION _TC07,Registration,Verify mobile number validation,Enter mobile number with alphabets or less than 10 digits,"1. Open registration page
+2. Enter name
+3. Enter email
+4. Enter invalid mobile (e.g., abc123)
+5. Enter password
+6. Check T&C
+7. Click Register
+8. Wait
+9. Observe error
+10. Validate mobile number format error",Mobile: 7126262626,Error: 'Enter a valid mobile number',,
+REGISTERATION _TC08,Registration,Verify terms and conditions checkbox,Try to register without accepting T&C,"1. Open Goibibo
+2. Go to sign up page
+3. Enter name
+4. Enter email
+5. Enter mobile
+6. Enter password
+7. Leave T&C unchecked
+8. Click Register
+9. Wait for error
+10. Validate T&C checkbox error",-,Error: 'You must accept terms to proceed',,
+REGISTERATION _TC09,Registration,Verify email verification is triggered,Register with valid details,"1. Go to registration page
+2. Enter valid name
+3. Enter valid email
+4. Enter mobile number
+5. Enter password
+6. Check T&C
+7. Click Register
+8. Wait for response
+9. Check email inbox
+10. Verify email verification link is received",Email: new@test.com,Success: 'Verification email sent',,

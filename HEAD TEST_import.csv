@@ -1,0 +1,54 @@
+﻿Test ID,Module,Test Case,Test Steps,Expected Result,Actual Result,Status
+HEADER_TC_01,Header,Verify presence of all main header options,"1. Navigate to Goibibo homepage
+2. Check visibility of header section
+3. Verify presence of 'Flights' tab
+4. Verify presence of 'Hotels' tab
+5. Verify presence of 'Trains' tab
+6. Verify presence of 'Buses' tab
+7. Verify presence of 'Cabs' tab
+8. Verify presence of 'My Trips'
+9. Verify presence of 'Login/Signup'
+10. Check if all tabs are clickable",All main header options are visible and clickable,,   
+HEADER_TC_02,Header,Verify navigation to Flights section,"1. Click on 'Flights' from header
+2. Wait for Flights page to load
+3. Verify URL contains 'flights'
+4. Check that flight search form is visible
+5. Validate that the page is interactive",User is navigated to Flights section with relevant search options,,
+HEADER_TC_03,Header,Verify sticky header behavior on scroll,"1. Open homepage
+2. Start scrolling down
+3. Observe the header position
+4. Ensure header remains fixed
+5. Check that all elements in header are still accessible",Header remains visible and usable during page scroll,,
+HEADER_TC_04,Header,Verify redirection on clicking 'Hotels',"1. Click on 'Hotels' from header
+2. Wait for Hotels page to load
+3. Check if URL contains 'hotels'
+4. Validate hotel search form is visible",User is navigated to Hotels page successfully,,
+HEADER_TC_05,Header,Verify login/signup button behavior,"1. Click on 'Login/Signup' in header
+2. Wait for login popup/modal to appear
+3. Check for mobile/email input field
+4. Verify continue/login button is present
+5. Close popup and check return to home",Login/Signup modal appears correctly with expected fields,,
+HEADER_TC_06,Header,Verify 'My Trips' redirection and login requirement,"1. Click on 'My Trips'
+2. If not logged in, verify login popup appears
+3. If logged in, redirect to booking history
+4. Check that bookings are listed (if any)
+5. Validate session check",User is redirected to 'My Trips' or prompted to login,,
+HEADER_TC_07,Header,Check responsiveness of header on mobile view,"1. Open Goibibo site in mobile view or resize browser
+2. Check if header adapts to smaller width
+3. Ensure hamburger menu or icons appear
+4. Click menu and check options
+5. Verify same options as desktop",Header displays properly on mobile with full functionality,,
+HEADER_TC_08,Header,Verify 'Cabs' section navigation,"1. Click on 'Cabs' in header
+2. Wait for redirection
+3. Check if URL contains 'cabs'
+4. Validate form for booking cabs",User is redirected to Cabs booking page,,
+HEADER_TC_09,Header,Ensure accessibility compliance for header items,"1. Navigate to homepage
+2. Use Tab key to navigate through header items
+3. Ensure each item is focusable
+4. Use Enter key to select
+5. Validate screen reader labels",All header items are keyboard accessible and labeled,,
+HEADER_TC_10,Header,Validate logout from header (if logged in),"1. Login to user account
+2. Click on user profile in header
+3. Click 'Logout'
+4. Wait for redirection to homepage
+5. Verify user is logged out",User is successfully logged out and session is cleared,,

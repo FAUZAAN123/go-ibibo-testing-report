@@ -1,0 +1,45 @@
+﻿Test ID,Module,Test scenario,Test Steps,Expected Result,Actual Result,Status
+LOGIN_TC1,Login,Valid login with correct credentials,"1. Navigate to Goibibo login page
+2. Enter registered email ID
+3. Enter valid password
+4. Click on 'Login' button
+5. Wait for user dashboard to load",User is successfully logged in and redirected to dashboard,,
+LOGIN_TC2,Login,Login attempt with incorrect password,"1. Navigate to login page
+2. Enter valid email
+3. Enter incorrect password
+4. Click on 'Login'
+5. Observe error message",Error message displayed: 'Incorrect password',,
+LOGIN_TC3,Login,Login with unregistered email ID,"1. Go to login page
+2. Enter unregistered email ID
+3. Enter any password
+4. Click on 'Login'
+5. Check for error message",Error message displayed: 'Email not found',,
+LOGIN_TC4,Login,Blank email and password,"1. Open login screen
+2. Leave both email and password blank
+3. Click on 'Login'
+4. Observe validation messages",Validation errors shown for both fields,,
+LOGIN_TC5,Login,Only email entered,"1. Enter valid email ID
+2. Leave password blank
+3. Click 'Login'
+4. Check validation error",Error: Password field is required,,
+LOGIN_TC6,Login,Only password entered,"1. Leave email field blank
+2. Enter valid password
+3. Click 'Login'
+4. Check validation error",Error: Email field is required,,
+LOGIN_TC7,Login,Email format validation,"1. Enter email without '@'
+2. Try logging in
+3. Check validation error",Email format validation message shown,,
+LOGIN_TC8,Login,Password masking,"1. Enter password in input field
+2. Verify password is masked
+3. Click eye icon
+4. Ensure password is revealed
+5. Click eye icon again to mask",Password is properly masked and toggled,,
+LOGIN_TC9,Login,Login button disabled until fields filled,"1. Open login page
+2. Leave fields blank
+3. Check if login button is disabled
+4. Fill one field at a time and check again",Login button only enabled when both fields are filled,,
+LOGIN_TC10,Login,Forgot password flow,"1. Click 'Forgot Password'
+2. Enter registered email
+3. Submit form
+4. Open email and click reset link
+5. Set new password",User receives reset link and can set new password,,
